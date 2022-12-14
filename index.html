@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+
+    <link href="css/styles.css" rel="stylesheet">
+
 </head>
 <body>
     
     <header>
 
         <nav>
-            <div class = "container"> 
-                <img src="images/logo.png" alt="Three Star Media">
-
+            <div class = "container grid-container"> 
+                <div class ="logo">
+                    <img src="images/logo.png" alt="Three Star Media">
+                </div>
+                
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li class ="current"><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Team</a></li>
@@ -23,8 +33,8 @@
                 </ul>
 
                 <form>
-                    <input type="search">
-                    <button>&#128269;</button>
+                    <input type="text" id="search" name="search" placeholder="Search">
+                    <button>&#128269</button>
                 </form>
             </div> <!-- end container -->
         
@@ -48,6 +58,8 @@
 
         <section class ="section-about">
             <div class="container">
+
+                <img src="images/about-us.jpg" alt="About us">
                 <h2>About us</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
@@ -62,25 +74,43 @@
         <section class ="section-services">
             <div class="container">
                 <h2>Our Services</h2>
+
+                <div class="grid-container1">
+                    <div class="block">
+                <img src="images/digital.jpg" alt="digital">
                 <h3>Digital Transformation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
                 <button>Digital Plans ▶</button>
+                </div>
 
+                <div class="block">
+                <img src="images/marketing.jpg" alt="marketing">
                 <h3>Marketing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
                 <button>Marketing Plans ▶</button>
+                </div>
 
+                <div class="block">
+                <img src="images/video.jpg" alt="video">
                 <h3>Video Production</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
                 <button>Video Plans ▶</button>
+                </div>
 
+                <div class="block">
+                <img src="images/web.jpg" alt="web">
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
                 <button>Web Plans ▶</button>
+                </div>
 
+                <div class="block">
+                <img src="images/print.jpg" alt="print">
                 <h3>Print</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
                 <button>Print Plans ▶</button>
+                </div>
+            </div>
                 <!-- h2 heading, five div's each with h3, image, text and button on a grid -->
             </div> <!-- end container -->
         </section> <!-- end section-services -->
@@ -100,18 +130,28 @@
             <div class="container">
 
                 <h2>Our Team</h2>
-                <img src="images/john.jpg" alt="John Doe">
+                <div class="grid-container">
+                    <div class="block">
+                        <img src="images/john.jpg" alt="John Doe">
+                    </div>
+                
+                    <div class="block">
                 <h3>John Doe</h3>
                 <h4>CEO and Co-owner</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
+                </div>
 
+                <div class="block">
+                <img src="images/bob.jpg" alt="Bob Rite">
+                </div>
+                <div class="block">
                 <h3>Bob Rite</h3>
                 <h4>CFO and Co-owner</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
+                </div>
+                
 
-                <img src="images/bob.jpg" alt="Bob Rite">
-
-
+                </div>
                 <!-- h2 heading, 2 divs with images, paragraphs, 2 h3 and 2 h4 -->
             </div> <!-- end container -->
         </section> <!-- end section-team -->
@@ -121,17 +161,19 @@
             <div class="container">
 
                 <h2>Contact Us</h2>
+                <div class="grid-container">
                 <h3>Send us a message</h3>
                 <p>Full Name</p>
-                <input type="text">
+                <input type="text" id="name" name="name">
                 <p>Email</p>
-                <input type="email">
+                <input type="email" id="email" name="email">
                 <p>Message</p>
-                <input type="text">
+                <input type="text" id="message" name="message">
 
                 <button>Send</button>
 
                 <h3>Hours of operation</h3>
+                
                 <table>
                     <tr>
                         <th>Days</th>
@@ -150,6 +192,9 @@
                 </table>
 
                 <h3>Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1435386.436928966!2d-77.51399305542192!3d45.35912382823269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1670962870864!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
                 <!-- h2, form, google maps embed, table on a grid -->
             </div> <!-- end container -->
         </section> <!-- end section-contact -->

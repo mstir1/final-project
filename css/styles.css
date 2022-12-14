@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Generic default styles */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px; /* 1em = 14px = 1rem */
+    line-height: 1.5;
+    color:#000000;
+}
+
+h1 {
+    font-size: 71px;
+    line-height: 106px;
+    margin-bottom: 17px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size:48px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size:32px;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 1em;
+}
+
+/* Navigation part */
+
+nav {
+    background-color: #222222;
+}
+
+#search {
+    width: 90%;
+}
+
+nav a:link,
+nav a:visited {
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    padding-top:17px;
+    padding-bottom: 17px;
+    color:#c78b07;
+    text-decoration: none;
+}
+
+nav li.current a:link,
+nav li.current a:visited {
+    background-color: #c78b07;
+    color:#000000;
+    
+}
+
+.logo {
+    background-color: #c78b07;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* the WELCOME section */
+
+.header-welcome {
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.header-welcome .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-top: 50px;
+}
+
+.header-welcome button {
+    font-size:18px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color:orange;
+}
+
+/* About Section */
+
+.section-about {
+    background-color: #ffe6ac;
+}
+
+/* Our services section */
+.section-services h3 {
+    font-weight: bold;
+}
+
+.section-services button {
+    background-color: #222222;
+    font-size:18px;
+    color: white;
+    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.grid-container1 .block{
+    background-color: #ffe6ac;
+    padding: 8px;
+}
+
+.grid-container1 img {
+    height: 400px;
+    width: 600px;
+}
+
+.grid-container1 {
+    display:grid;
+    grid-gap: 7px;
+    
+}
+/* Our Vision */
+.section-vision h3 {
+    font-weight: bold;
+}
+
+.section-vision {
+    color:white;
+    background-size: cover;
+    background-image: url(../images/vision.jpg);
+}
+
+.section-vision button{
+    background-color: #092642;
+    font-size:18px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+/* Our Team */
+
+.section-team h3, h4 {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.section-team p {
+    padding-left: 10px;
+}
+
+.section-team .grid-container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.section-team .grid-container .block {
+    background-color: #ffe6ac;
+}
+
+/* Contact */
+
+#email {
+    width:100%;
+}
+
+#name {
+    width: 100%;
+}
+
+#message {
+    height: 73px;
+    width: 100%;
+}
+.section-contact h3 {
+    font-weight: bold;
+}
+.section-contact button {
+    background-color: black;
+    color: #c78b07;
+}
+
+table, th, td {
+    padding: 9px;
+    border: 1px solid;
+  }
+th {
+    background-color: #ffe6ac;
+}
+
+table {
+    width: 100%;
+}
+/* Footer */
+
+footer {
+    color:#c78b07;
+    background-color: #222222;
+}
+    
+/* END OF YOUR MOBILE-FIRST CSS. 
+NO MEDIA QUERIES ABOVE THIS LINE */
+
+/* TABLET STYLES: 760px to 1199px */
+
+@media screen and (min-width: 760px) {
+
+    .container {
+        width: 706px;
+        margin: 0 auto;
+    }
+    /* nothing else here */
+}
+/*==================== DESKTOP STYLES =====================*/
+
+@media screen and (min-width: 1200px) {
+    
+    .container {
+        width: 1168px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+
+    nav a:link {
+        display: flex;
+        float: left;
+        width: 140px;
+    }
+
+    nav li.current a:link,
+    nav li.current a:visited {
+        background-color: #c78b07;
+        color:#000000;
+    }
+/*Our Services*/
+
+/*my friend Conner helped me out with this code and with grid template areas */
+
+.section-services .grid-container1 {
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-areas: 
+    "a a a b b b"
+    "c c d d e e"
+    ;
+}
+
+.grid-container1 .block:nth-child(1) {grid-area: a;}
+.grid-container1 .block:nth-child(2) {grid-area: b;}
+.grid-container1 .block:nth-child(3) {grid-area: c;}
+.grid-container1 .block:nth-child(4) {grid-area: d;}
+.grid-container1 .block:nth-child(5) {grid-area: e;}
+
+    /*Our Team*/
+
+    .section-team .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1 fr);
+        grid-template-areas: 
+        "a b"
+        "d c"
+        ;
+    }
+
+.grid-container .block:nth-child(1) {grid-area: a;}
+.grid-container .block:nth-child(2) {grid-area: b;}
+.grid-container .block:nth-child(3) {grid-area: c;}
+.grid-container .block:nth-child(4) {grid-area: d;}
+
+
+}
