@@ -279,11 +279,24 @@ NO MEDIA QUERIES ABOVE THIS LINE */
         margin: 0 auto;
     }
 
+    .header-form {
+        background-color:#222222
+    }
+    #search {
+        display: flex;
+        width: 10%;
+    }
 
     nav a:link {
-        display: flex;
+        display: grid;
         float: left;
-        width: 140px;
+        width: 150px;
+   }
+
+    .logo {
+        display:flex;
+        float: left;
+        height: auto;
     }
 
     nav li.current a:link,
@@ -291,6 +304,7 @@ NO MEDIA QUERIES ABOVE THIS LINE */
         background-color: #c78b07;
         color:#000000;
     }
+ 
 /*Our Services*/
 
 /*my friend Conner helped me out with this code and with grid template areas */
